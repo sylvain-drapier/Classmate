@@ -1,0 +1,7 @@
+CalculResistances module
+========================
+
+.. automodule:: CalculResistances
+   :members:
+   :undoc-members:
+   :show-inheritance:

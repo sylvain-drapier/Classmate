@@ -1,0 +1,7 @@
+tests\_manu module
+==================
+
+.. automodule:: tests_manu
+   :members:
+   :undoc-members:
+   :show-inheritance:

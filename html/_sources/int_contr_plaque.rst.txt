@@ -1,0 +1,7 @@
+int\_contr\_plaque module
+=========================
+
+.. automodule:: int_contr_plaque
+   :members:
+   :undoc-members:
+   :show-inheritance:

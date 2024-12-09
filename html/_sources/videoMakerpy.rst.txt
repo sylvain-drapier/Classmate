@@ -1,0 +1,7 @@
+videoMakerpy module
+===================
+
+.. automodule:: videoMakerpy
+   :members:
+   :undoc-members:
+   :show-inheritance:

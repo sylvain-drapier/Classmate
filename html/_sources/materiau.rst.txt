@@ -1,0 +1,7 @@
+materiau module
+===============
+
+.. automodule:: materiau
+   :members:
+   :undoc-members:
+   :show-inheritance:

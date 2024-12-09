@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>utils module &#8212; Documentation Classmate V3</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/translations.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-utils">
+<span id="utils-module"></span><h1>utils module<a class="headerlink" href="#module-utils" title="Lien permanent vers cette rubrique">¶</a></h1>
+<p>Created on Sat Dec 30 16:37:47 2023</p>
+<p>&#64;author: lbonn</p>
+<dl class="simple">
+<dt>Classe  qui :</dt><dd><ol class="arabic simple">
+<li><p>Gère le type de théorie par des variables d’instance</p></li>
+<li><p>Fournit les fonctions pour la sauvegarde</p></li>
+<li><p>Importe tous les modules nécessaire à toutes les classes</p></li>
+</ol>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="utils.Utils">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">utils.</span></span><span class="sig-name descname"><span class="pre">Utils</span></span><a class="headerlink" href="#utils.Utils" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>Bases : <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="utils.Utils.def3_induite">
+<span class="sig-name descname"><span class="pre">def3_induite</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#utils.Utils.def3_induite" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>Si 1 -&gt; déformations relatives à la normale 3 prises en compte</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="utils.Utils.destockage">
+<span class="sig-name descname"><span class="pre">destockage</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#utils.Utils.destockage" title="Lien permanent vers cette définition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="utils.Utils.nbr_obj">
+<span class="sig-name descname"><span class="pre">nbr_obj</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'L_section':</span> <span class="pre">1,</span> <span class="pre">'props_mat':</span> <span class="pre">11,</span> <span class="pre">'rupture':</span> <span class="pre">0,</span> <span class="pre">'vals_max':</span> <span class="pre">0}</span></em><a class="headerlink" href="#utils.Utils.nbr_obj" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>Dictionnaire sauvegardant le nombre de fois qu’un certain tye d’objet a été généré lors d’exécutions successives</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="utils.Utils.obj_to_save">
+<span class="sig-name descname"><span class="pre">obj_to_save</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'L_section':</span> <span class="pre">{'L_section_1':</span> <span class="pre">array([[[2.86867969e+05,</span> <span class="pre">7.83638035e+03,</span> <span class="pre">0.00000000e+00,</span> <span class="pre">1.01863407e-10,</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">2.27373675e-12,</span> <span class="pre">0.00000000e+00,</span> <span class="pre">0.00000000e+00,</span> <span class="pre">0.00000000e+00],</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">[7.83638035e+03,</span> <span class="pre">2.46427055e+04,</span> <span class="pre">0.00000000e+00,</span> <span class="pre">2.27373675e-12,</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">7.95807864e-12,</span> <span class="pre">0.00000000e+00,</span> <span class="pre">0.00000000e+00,</span> <span class="pre">0.00000000e+00],</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">[0.00000000e+00,</span> <span class="pre">0.00000000e+00,</span> <span class="pre">1.04466963e+04,</span> <span class="pre">0.00000000e+00,</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">0.00000000e+00,</span> <span class="pre">3.06954462e-12,</span> <span class="pre">0.00000000e+00,</span> <span class="pre">0.00000000e+00],</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">[1.01863407e-10,</span> <span class="pre">2.27373675e-12,</span> <span class="pre">0.00000000e+00,</span> <span class="pre">9.94858116e+04,</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">2.71765670e+03,</span> <span class="pre">0.00000000e+00,</span> <span class="pre">0.00000000e+00,</span> <span class="pre">0.00000000e+00],</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">[2.27373675e-12,</span> <span class="pre">7.95807864e-12,</span> <span class="pre">0.00000000e+00,</span> <span class="pre">2.71765670e+03,</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">8.54609027e+03,</span> <span class="pre">0.00000000e+00,</span> <span class="pre">0.00000000e+00,</span> <span class="pre">0.00000000e+00],</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">[0.00000000e+00,</span> <span class="pre">0.00000000e+00,</span> <span class="pre">3.06954462e-12,</span> <span class="pre">0.00000000e+00,</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">0.00000000e+00,</span> <span class="pre">3.62291427e+03,</span> <span class="pre">0.00000000e+00,</span> <span class="pre">0.00000000e+00],</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">[0.00000000e+00,</span> <span class="pre">0.00000000e+00,</span> <span class="pre">0.00000000e+00,</span> <span class="pre">0.00000000e+00,</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">0.00000000e+00,</span> <span class="pre">0.00000000e+00,</span> <span class="pre">8.78259362e+03,</span> <span class="pre">0.00000000e+00],</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">[0.00000000e+00,</span> <span class="pre">0.00000000e+00,</span> <span class="pre">0.00000000e+00,</span> <span class="pre">0.00000000e+00,</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">0.00000000e+00,</span> <span class="pre">0.00000000e+00,</span> <span class="pre">0.00000000e+00,</span> <span class="pre">1.04466963e+04]]])},</span> <span class="pre">'props_mat':</span> <span class="pre">{'props_mat_1':</span> <span class="pre">{'Ef':</span> <span class="pre">230000.0,</span> <span class="pre">'Em':</span> <span class="pre">3500.0,</span> <span class="pre">'Gflt':</span> <span class="pre">97700.0,</span> <span class="pre">'Vf':</span> <span class="pre">0.35294117647058815,</span> <span class="pre">'ep':</span> <span class="pre">0.17,</span> <span class="pre">'ms':</span> <span class="pre">0.000242,</span> <span class="pre">'nom':</span> <span class="pre">'T300_914',</span> <span class="pre">'nuf':</span> <span class="pre">0.33,</span> <span class="pre">'num':</span> <span class="pre">0.3,</span> <span class="pre">'resistances':</span> <span class="pre">{'TsaiWu':</span> <span class="pre">{'F1':</span> <span class="pre">0,</span> <span class="pre">'F11':</span> <span class="pre">4.5e-07,</span> <span class="pre">'F12':</span> <span class="pre">-3.3599999999999996e-06,</span> <span class="pre">'F2':</span> <span class="pre">0.020100000000000003,</span> <span class="pre">'F22':</span> <span class="pre">9.999999999999999e-05,</span> <span class="pre">'F66':</span> <span class="pre">2.16e-06},</span> <span class="pre">'cont_Max':</span> <span class="pre">{'S':</span> <span class="pre">70,</span> <span class="pre">'Xc':</span> <span class="pre">1430,</span> <span class="pre">'Xt':</span> <span class="pre">1380,</span> <span class="pre">'Yc':</span> <span class="pre">245,</span> <span class="pre">'Yt':</span> <span class="pre">40}},</span> <span class="pre">'rho_f':</span> <span class="pre">0.00176,</span> <span class="pre">'rho_r':</span> <span class="pre">0.00124},</span> <span class="pre">'props_mat_10':</span> <span class="pre">{'Ef':</span> <span class="pre">4400.0,</span> <span class="pre">'Em':</span> <span class="pre">3500.0,</span> <span class="pre">'Gflt':</span> <span class="pre">35200.0,</span> <span class="pre">'Vf':</span> <span class="pre">0.8879855465221321,</span> <span class="pre">'ep':</span> <span class="pre">0.18,</span> <span class="pre">'ms':</span> <span class="pre">0.000418,</span> <span class="pre">'nom':</span> <span class="pre">'E_914',</span> <span class="pre">'nuf':</span> <span class="pre">0.22,</span> <span class="pre">'num':</span> <span class="pre">0.3,</span> <span class="pre">'resistances':</span> <span class="pre">{'TsaiWu':</span> <span class="pre">{'F1':</span> <span class="pre">0.0007,</span> <span class="pre">'F11':</span> <span class="pre">1.55e-06,</span> <span class="pre">'F12':</span> <span class="pre">-1.025e-05,</span> <span class="pre">'F2':</span> <span class="pre">0.0238,</span> <span class="pre">'F22':</span> <span class="pre">0.00027499999999999996,</span> <span class="pre">'F66':</span> <span class="pre">0.000195},</span> <span class="pre">'cont_Max':</span> <span class="pre">{'S':</span> <span class="pre">70,</span> <span class="pre">'Xc':</span> <span class="pre">910,</span> <span class="pre">'Xt':</span> <span class="pre">1400,</span> <span class="pre">'Yc':</span> <span class="pre">110,</span> <span class="pre">'Yt':</span> <span class="pre">35}},</span> <span class="pre">'rho_f':</span> <span class="pre">0.00246,</span> <span class="pre">'rho_r':</span> <span class="pre">0.00123},</span> <span class="pre">'props_mat_11':</span> <span class="pre">{'E':</span> <span class="pre">175.0,</span> <span class="pre">'ep':</span> <span class="pre">0.18,</span> <span class="pre">'nom':</span> <span class="pre">'PVC_Divinycell',</span> <span class="pre">'nu':</span> <span class="pre">0.32,</span> <span class="pre">'resistances':</span> <span class="pre">{'TsaiWu':</span> <span class="pre">{'F1':</span> <span class="pre">0.0007,</span> <span class="pre">'F11':</span> <span class="pre">1.55e-06,</span> <span class="pre">'F12':</span> <span class="pre">-1.025e-05,</span> <span class="pre">'F2':</span> <span class="pre">0.0238,</span> <span class="pre">'F22':</span> <span class="pre">0.00027499999999999996,</span> <span class="pre">'F66':</span> <span class="pre">0.000195},</span> <span class="pre">'cont_Max':</span> <span class="pre">{'S':</span> <span class="pre">2,</span> <span class="pre">'Xc':</span> <span class="pre">2.6,</span> <span class="pre">'Xt':</span> <span class="pre">4.2,</span> <span class="pre">'Yc':</span> <span class="pre">2.6,</span> <span class="pre">'Yt':</span> <span class="pre">4.2}}},</span> <span class="pre">'props_mat_2':</span> <span class="pre">{'Ef':</span> <span class="pre">230000.0,</span> <span class="pre">'Em':</span> <span class="pre">3500.0,</span> <span class="pre">'Gflt':</span> <span class="pre">97700.0,</span> <span class="pre">'Vf':</span> <span class="pre">0.35294117647058815,</span> <span class="pre">'ep':</span> <span class="pre">0.17,</span> <span class="pre">'ms':</span> <span class="pre">0.000242,</span> <span class="pre">'nom':</span> <span class="pre">'T300_914',</span> <span class="pre">'nuf':</span> <span class="pre">0.33,</span> <span class="pre">'num':</span> <span class="pre">0.3,</span> <span class="pre">'resistances':</span> <span class="pre">{'TsaiWu':</span> <span class="pre">{'F1':</span> <span class="pre">0,</span> <span class="pre">'F11':</span> <span class="pre">4.5e-07,</span> <span class="pre">'F12':</span> <span class="pre">-3.3599999999999996e-06,</span> <span class="pre">'F2':</span> <span class="pre">0.020100000000000003,</span> <span class="pre">'F22':</span> <span class="pre">9.999999999999999e-05,</span> <span class="pre">'F66':</span> <span class="pre">2.16e-06},</span> <span class="pre">'cont_Max':</span> <span class="pre">{'S':</span> <span class="pre">70,</span> <span class="pre">'Xc':</span> <span class="pre">1430,</span> <span class="pre">'Xt':</span> <span class="pre">1380,</span> <span class="pre">'Yc':</span> <span class="pre">245,</span> <span class="pre">'Yt':</span> <span class="pre">40}},</span> <span class="pre">'rho_f':</span> <span class="pre">0.00176,</span> <span class="pre">'rho_r':</span> <span class="pre">0.00124},</span> <span class="pre">'props_mat_3':</span> <span class="pre">{'Ef':</span> <span class="pre">230000.0,</span> <span class="pre">'Em':</span> <span class="pre">3500.0,</span> <span class="pre">'Gflt':</span> <span class="pre">97700.0,</span> <span class="pre">'Vf':</span> <span class="pre">0.35294117647058815,</span> <span class="pre">'ep':</span> <span class="pre">0.17,</span> <span class="pre">'ms':</span> <span class="pre">0.000242,</span> <span class="pre">'nom':</span> <span class="pre">'T300_914',</span> <span class="pre">'nuf':</span> <span class="pre">0.33,</span> <span class="pre">'num':</span> <span class="pre">0.3,</span> <span class="pre">'resistances':</span> <span class="pre">{'TsaiWu':</span> <span class="pre">{'F1':</span> <span class="pre">0,</span> <span class="pre">'F11':</span> <span class="pre">4.5e-07,</span> <span class="pre">'F12':</span> <span class="pre">-3.3599999999999996e-06,</span> <span class="pre">'F2':</span> <span class="pre">0.020100000000000003,</span> <span class="pre">'F22':</span> <span class="pre">9.999999999999999e-05,</span> <span class="pre">'F66':</span> <span class="pre">2.16e-06},</span> <span class="pre">'cont_Max':</span> <span class="pre">{'S':</span> <span class="pre">70,</span> <span class="pre">'Xc':</span> <span class="pre">1430,</span> <span class="pre">'Xt':</span> <span class="pre">1380,</span> <span class="pre">'Yc':</span> <span class="pre">245,</span> <span class="pre">'Yt':</span> <span class="pre">40}},</span> <span class="pre">'rho_f':</span> <span class="pre">0.00176,</span> <span class="pre">'rho_r':</span> <span class="pre">0.00124},</span> <span class="pre">'props_mat_4':</span> <span class="pre">{'Ef':</span> <span class="pre">230000.0,</span> <span class="pre">'Em':</span> <span class="pre">3500.0,</span> <span class="pre">'Gflt':</span> <span class="pre">97700.0,</span> <span class="pre">'Vf':</span> <span class="pre">0.35294117647058815,</span> <span class="pre">'ep':</span> <span class="pre">0.17,</span> <span class="pre">'ms':</span> <span class="pre">0.000242,</span> <span class="pre">'nom':</span> <span class="pre">'T300_914',</span> <span class="pre">'nuf':</span> <span class="pre">0.33,</span> <span class="pre">'num':</span> <span class="pre">0.3,</span> <span class="pre">'resistances':</span> <span class="pre">{'TsaiWu':</span> <span class="pre">{'F1':</span> <span class="pre">0,</span> <span class="pre">'F11':</span> <span class="pre">4.5e-07,</span> <span class="pre">'F12':</span> <span class="pre">-3.3599999999999996e-06,</span> <span class="pre">'F2':</span> <span class="pre">0.020100000000000003,</span> <span class="pre">'F22':</span> <span class="pre">9.999999999999999e-05,</span> <span class="pre">'F66':</span> <span class="pre">2.16e-06},</span> <span class="pre">'cont_Max':</span> <span class="pre">{'S':</span> <span class="pre">70,</span> <span class="pre">'Xc':</span> <span class="pre">1430,</span> <span class="pre">'Xt':</span> <span class="pre">1380,</span> <span class="pre">'Yc':</span> <span class="pre">245,</span> <span class="pre">'Yt':</span> <span class="pre">40}},</span> <span class="pre">'rho_f':</span> <span class="pre">0.00176,</span> <span class="pre">'rho_r':</span> <span class="pre">0.00124},</span> <span class="pre">'props_mat_5':</span> <span class="pre">{'Ef':</span> <span class="pre">230000.0,</span> <span class="pre">'Em':</span> <span class="pre">3500.0,</span> <span class="pre">'Gflt':</span> <span class="pre">97700.0,</span> <span class="pre">'Vf':</span> <span class="pre">0.35294117647058815,</span> <span class="pre">'ep':</span> <span class="pre">0.17,</span> <span class="pre">'ms':</span> <span class="pre">0.000242,</span> <span class="pre">'nom':</span> <span class="pre">'T300_914',</span> <span class="pre">'nuf':</span> <span class="pre">0.33,</span> <span class="pre">'num':</span> <span class="pre">0.3,</span> <span class="pre">'resistances':</span> <span class="pre">{'TsaiWu':</span> <span class="pre">{'F1':</span> <span class="pre">0,</span> <span class="pre">'F11':</span> <span class="pre">4.5e-07,</span> <span class="pre">'F12':</span> <span class="pre">-3.3599999999999996e-06,</span> <span class="pre">'F2':</span> <span class="pre">0.020100000000000003,</span> <span class="pre">'F22':</span> <span class="pre">9.999999999999999e-05,</span> <span class="pre">'F66':</span> <span class="pre">2.16e-06},</span> <span class="pre">'cont_Max':</span> <span class="pre">{'S':</span> <span class="pre">70,</span> <span class="pre">'Xc':</span> <span class="pre">1430,</span> <span class="pre">'Xt':</span> <span class="pre">1380,</span> <span class="pre">'Yc':</span> <span class="pre">245,</span> <span class="pre">'Yt':</span> <span class="pre">40}},</span> <span class="pre">'rho_f':</span> <span class="pre">0.00176,</span> <span class="pre">'rho_r':</span> <span class="pre">0.00124},</span> <span class="pre">'props_mat_6':</span> <span class="pre">{'Ef':</span> <span class="pre">230000.0,</span> <span class="pre">'Em':</span> <span class="pre">3500.0,</span> <span class="pre">'Gflt':</span> <span class="pre">97700.0,</span> <span class="pre">'Vf':</span> <span class="pre">0.35294117647058815,</span> <span class="pre">'ep':</span> <span class="pre">0.17,</span> <span class="pre">'ms':</span> <span class="pre">0.000242,</span> <span class="pre">'nom':</span> <span class="pre">'T300_914',</span> <span class="pre">'nuf':</span> <span class="pre">0.33,</span> <span class="pre">'num':</span> <span class="pre">0.3,</span> <span class="pre">'resistances':</span> <span class="pre">{'TsaiWu':</span> <span class="pre">{'F1':</span> <span class="pre">0,</span> <span class="pre">'F11':</span> <span class="pre">4.5e-07,</span> <span class="pre">'F12':</span> <span class="pre">-3.3599999999999996e-06,</span> <span class="pre">'F2':</span> <span class="pre">0.020100000000000003,</span> <span class="pre">'F22':</span> <span class="pre">9.999999999999999e-05,</span> <span class="pre">'F66':</span> <span class="pre">2.16e-06},</span> <span class="pre">'cont_Max':</span> <span class="pre">{'S':</span> <span class="pre">70,</span> <span class="pre">'Xc':</span> <span class="pre">1430,</span> <span class="pre">'Xt':</span> <span class="pre">1380,</span> <span class="pre">'Yc':</span> <span class="pre">245,</span> <span class="pre">'Yt':</span> <span class="pre">40}},</span> <span class="pre">'rho_f':</span> <span class="pre">0.00176,</span> <span class="pre">'rho_r':</span> <span class="pre">0.00124},</span> <span class="pre">'props_mat_7':</span> <span class="pre">{'Ef':</span> <span class="pre">230000.0,</span> <span class="pre">'Em':</span> <span class="pre">3500.0,</span> <span class="pre">'Gflt':</span> <span class="pre">97700.0,</span> <span class="pre">'Vf':</span> <span class="pre">0.35294117647058815,</span> <span class="pre">'ep':</span> <span class="pre">0.17,</span> <span class="pre">'ms':</span> <span class="pre">0.000242,</span> <span class="pre">'nom':</span> <span class="pre">'T300_914',</span> <span class="pre">'nuf':</span> <span class="pre">0.33,</span> <span class="pre">'num':</span> <span class="pre">0.3,</span> <span class="pre">'resistances':</span> <span class="pre">{'TsaiWu':</span> <span class="pre">{'F1':</span> <span class="pre">0,</span> <span class="pre">'F11':</span> <span class="pre">4.5e-07,</span> <span class="pre">'F12':</span> <span class="pre">-3.3599999999999996e-06,</span> <span class="pre">'F2':</span> <span class="pre">0.020100000000000003,</span> <span class="pre">'F22':</span> <span class="pre">9.999999999999999e-05,</span> <span class="pre">'F66':</span> <span class="pre">2.16e-06},</span> <span class="pre">'cont_Max':</span> <span class="pre">{'S':</span> <span class="pre">70,</span> <span class="pre">'Xc':</span> <span class="pre">1430,</span> <span class="pre">'Xt':</span> <span class="pre">1380,</span> <span class="pre">'Yc':</span> <span class="pre">245,</span> <span class="pre">'Yt':</span> <span class="pre">40}},</span> <span class="pre">'rho_f':</span> <span class="pre">0.00176,</span> <span class="pre">'rho_r':</span> <span class="pre">0.00124},</span> <span class="pre">'props_mat_8':</span> <span class="pre">{'Ef':</span> <span class="pre">4400.0,</span> <span class="pre">'Em':</span> <span class="pre">3500.0,</span> <span class="pre">'Gflt':</span> <span class="pre">35200.0,</span> <span class="pre">'Vf':</span> <span class="pre">0.8879855465221321,</span> <span class="pre">'ep':</span> <span class="pre">0.18,</span> <span class="pre">'ms':</span> <span class="pre">0.000418,</span> <span class="pre">'nom':</span> <span class="pre">'E_914',</span> <span class="pre">'nuf':</span> <span class="pre">0.22,</span> <span class="pre">'num':</span> <span class="pre">0.3,</span> <span class="pre">'resistances':</span> <span class="pre">{'TsaiWu':</span> <span class="pre">{'F1':</span> <span class="pre">0.0007,</span> <span class="pre">'F11':</span> <span class="pre">1.55e-06,</span> <span class="pre">'F12':</span> <span class="pre">-1.025e-05,</span> <span class="pre">'F2':</span> <span class="pre">0.0238,</span> <span class="pre">'F22':</span> <span class="pre">0.00027499999999999996,</span> <span class="pre">'F66':</span> <span class="pre">0.000195},</span> <span class="pre">'cont_Max':</span> <span class="pre">{'S':</span> <span class="pre">70,</span> <span class="pre">'Xc':</span> <span class="pre">910,</span> <span class="pre">'Xt':</span> <span class="pre">1400,</span> <span class="pre">'Yc':</span> <span class="pre">110,</span> <span class="pre">'Yt':</span> <span class="pre">35}},</span> <span class="pre">'rho_f':</span> <span class="pre">0.00246,</span> <span class="pre">'rho_r':</span> <span class="pre">0.00123},</span> <span class="pre">'props_mat_9':</span> <span class="pre">{'Ef':</span> <span class="pre">4400.0,</span> <span class="pre">'Em':</span> <span class="pre">3500.0,</span> <span class="pre">'Gflt':</span> <span class="pre">35200.0,</span> <span class="pre">'Vf':</span> <span class="pre">0.8879855465221321,</span> <span class="pre">'ep':</span> <span class="pre">0.18,</span> <span class="pre">'ms':</span> <span class="pre">0.000418,</span> <span class="pre">'nom':</span> <span class="pre">'E_914',</span> <span class="pre">'nuf':</span> <span class="pre">0.22,</span> <span class="pre">'num':</span> <span class="pre">0.3,</span> <span class="pre">'resistances':</span> <span class="pre">{'TsaiWu':</span> <span class="pre">{'F1':</span> <span class="pre">0.0007,</span> <span class="pre">'F11':</span> <span class="pre">1.55e-06,</span> <span class="pre">'F12':</span> <span class="pre">-1.025e-05,</span> <span class="pre">'F2':</span> <span class="pre">0.0238,</span> <span class="pre">'F22':</span> <span class="pre">0.00027499999999999996,</span> <span class="pre">'F66':</span> <span class="pre">0.000195},</span> <span class="pre">'cont_Max':</span> <span class="pre">{'S':</span> <span class="pre">70,</span> <span class="pre">'Xc':</span> <span class="pre">910,</span> <span class="pre">'Xt':</span> <span class="pre">1400,</span> <span class="pre">'Yc':</span> <span class="pre">110,</span> <span class="pre">'Yt':</span> <span class="pre">35}},</span> <span class="pre">'rho_f':</span> <span class="pre">0.00246,</span> <span class="pre">'rho_r':</span> <span class="pre">0.00123}},</span> <span class="pre">'rupture':</span> <span class="pre">{},</span> <span class="pre">'vals_max':</span> <span class="pre">{}}</span></em><a class="headerlink" href="#utils.Utils.obj_to_save" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>Dictionnaire qui sauvegarde les résultats des exécutions successives tant que stockage_final n’est pas appelé</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="utils.Utils.offset_eps">
+<span class="sig-name descname"><span class="pre">offset_eps</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1e-12</span></em><a class="headerlink" href="#utils.Utils.offset_eps" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>Seuils pour lesquels les déformations sont considérées nuls lorsque ces valeurs sont en dessous des seuils respectifs.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="utils.Utils.offset_sig">
+<span class="sig-name descname"><span class="pre">offset_sig</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1e-10</span></em><a class="headerlink" href="#utils.Utils.offset_sig" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>Seuils pour lesquels les contraintes sont considérées nuls lorsque ces valeurs sont en dessous des seuils respectifs.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="utils.Utils.pagano">
+<span class="sig-name descname"><span class="pre">pagano</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#utils.Utils.pagano" title="Lien permanent vers cette définition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="utils.Utils.plaque">
+<span class="sig-name descname"><span class="pre">plaque</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#utils.Utils.plaque" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>Si 0 -&gt; théorie des poutres, si 1 -&gt; théorie des plaques</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="utils.Utils.polaire">
+<span class="sig-name descname"><span class="pre">polaire</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#utils.Utils.polaire" title="Lien permanent vers cette définition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="utils.Utils.seuil">
+<span class="sig-name descname"><span class="pre">seuil</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1e-08</span></em><a class="headerlink" href="#utils.Utils.seuil" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>Les coefficients sous cette valeur cont considérés comme nuls</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="utils.Utils.stockage">
+<span class="sig-name descname"><span class="pre">stockage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">objet_init</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.Utils.stockage" title="Lien permanent vers cette définition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="utils.Utils.stockage_final">
+<span class="sig-name descname"><span class="pre">stockage_final</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#utils.Utils.stockage_final" title="Lien permanent vers cette définition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="utils.Utils.vider_les_doss">
+<span class="sig-name descname"><span class="pre">vider_les_doss</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#utils.Utils.vider_les_doss" title="Lien permanent vers cette définition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Classmate</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024, L. Bonneau.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/utils.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

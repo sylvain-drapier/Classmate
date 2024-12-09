@@ -1,0 +1,7 @@
+Contraintes\_plaques module
+===========================
+
+.. automodule:: Contraintes_plaques
+   :members:
+   :undoc-members:
+   :show-inheritance:

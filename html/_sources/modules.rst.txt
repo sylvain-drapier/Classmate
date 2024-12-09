@@ -1,0 +1,16 @@
+Classmate
+=========
+
+.. toctree::
+   :maxdepth: 4
+
+   CalculResistances
+   Contraintes
+   Contraintes_plaques
+   int_contr
+   int_contr_plaque
+   interface
+   materiau
+   tests_manu
+   utils
+   videoMakerpy

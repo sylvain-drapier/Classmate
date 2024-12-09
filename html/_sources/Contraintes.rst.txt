@@ -1,0 +1,7 @@
+Contraintes module
+==================
+
+.. automodule:: Contraintes
+   :members:
+   :undoc-members:
+   :show-inheritance:
